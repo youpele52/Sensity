@@ -6,9 +6,8 @@
 
 #### Installing required packages
 
-For building the model and training , Go to /Sensity folder and run
-
 Go to terminal and the working folder where model.py, train.py etc., are located and run this
+
 pip install -r requirements.txt
 
 ### Trainig the models
@@ -23,11 +22,11 @@ python train.py
 
 In two terminals opened, go to /Flask folder ie /Sensity/Flask
 
-create a virtual environment venv using the commands below
+create a virtual environment venv using the command below
 
 python3 -m venv venv
 
-Activate the virtual environment using this commands in both terminals
+Activate the virtual environment using this command in both terminals
 
 source venv/bin/activate
 
@@ -57,7 +56,7 @@ In the second terminal, run the following curl post request
 
 curl localhost:5000/predict -d '{"input": "sneakers"}'
 
-Check this folder /Flask/app/generated_images to view the generated image
+If you get the success reponse {"response":"Successfully generated a sneakers"} then check this folder /Flask/app/generated_images to view the generated image
 
 To make another post request, change the “sneakers” to something else
 
