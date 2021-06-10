@@ -40,6 +40,7 @@ pip install -r requirements.txt
 Goto /Flask/app folder create an .env file if it does not exist with the following content in the file
 
 FLASK_APP=main.py
+
 FLASK_ENV=developoment
 
 Then to run Flask, type this...
@@ -48,7 +49,7 @@ flask run
 
 Or simply run this
 
-FLASK_APP=main.py
+FLASK_APP=main.py flask run
 
 ### curl post request
 
