@@ -23,24 +23,32 @@ python train.py
 
 In two terminals opened, go to /Flask folder ie /Sensity/Flask
 
+create a virtual environment venv using the commands below
+
+python3 -m venv venv
+
 Activate the virtual environment using this commands in both terminals
 
 source venv/bin/activate
 
 Then install the required packages using this command
+
 pip install -r requirements.txt
 
 ### Running Flask
 
-Although not necessary since there is .env file to set Flask environment, nevertheless
+Goto /Flask/app folder create an .env file if it does not exist with the following content in the file
 
-(In one of the terminals run the flask using this commands
-export FLASK_APP=main.py
-export FLASK_ENV=developoment)
+FLASK_APP=main.py
+FLASK_ENV=developoment
 
-Run Flask, type this
+Then to run Flask, type this...
 
 flask run
+
+Or simply run this
+
+FLASK_APP=main.py
 
 ### curl post request
 
@@ -52,7 +60,7 @@ Check this folder /Flask/app/generated_images to view the generated image
 
 To make another post request, change the “sneakers” to something else
 
-Unfortunately, after successful image generation and the flask will stop running. To make another post request, start flask again “flask run”, the you can make another request.
+Unfortunately, after a successful image generation and the flask will stop running. To make another post request, start flask again “flask run” or "FLASK_APP=main.py", then you can make another request.
 
 Fashion_MNIST_classes = {
 0: "T-shirt/Top",
